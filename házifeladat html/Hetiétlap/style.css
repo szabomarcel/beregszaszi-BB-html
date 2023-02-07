@@ -5,34 +5,42 @@ div{
     width: 250px;
 }
 h1{
-    font-family: verdana;
+    font-family: 'Monotype Corsiva';
     color: 	#000066;
-    width: 250px;
+    
 }
 h2{
-    font-family: Helvetica;
+    font-family: 'Monotype Corsiva';
     color: #000066;
-    width: 250px;
+    
+}
+h6{
+    font-family: 'Monotype Corsiva';
+    color: #000066;
+    
 }
 ul{
-    font-family: Helvetica;
+    font-family: 'Monotype Corsiva';
     color: #000066;
 }
 li{
-    font-family: Helvetica;
+    font-family: 'Monotype Corsiva';
     color: #000066;
-    width: 250px;
+    
 }
 th{
-    font-family: Tahoma;
+    font-family: 'Courier';
     color: 	#000066;
+    
 }
 p{
-    font-family: Georgia;
+    font-family: 'Monotype Corsiva';
     color: 	#000066;
 }
-hr{
-    color:red;
+hr {
+    border: 3;
+    border-bottom: 2px solid;
+    background:red;
 }
 body{
     border: 0px solid black;
