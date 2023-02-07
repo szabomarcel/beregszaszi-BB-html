@@ -15,3 +15,10 @@
 {
     text-emphasis: none;
 }
+figure
+{
+    border: blue thick double;
+    background-color: lightcyan;
+    color: darkblue;
+    
+}

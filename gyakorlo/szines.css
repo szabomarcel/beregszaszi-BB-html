@@ -1,0 +1,11 @@
+table{
+    border: darkolivegreen ridge thin;
+    border-collapse: collapse ;
+    padding: 5px;
+}
+td,th{
+border:gray solid thin;
+text-align: center;
+width: 50px;
+padding: 50px;
+}
