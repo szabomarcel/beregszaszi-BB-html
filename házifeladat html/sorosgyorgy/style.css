@@ -14,12 +14,22 @@ body{
     height: 50%;
     margin-left: auto;
     margin-right: auto;
+    font-family: monospace;
 }
-tr{
+td{
+    background-color: darkgray ;
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
     color:black;
-    border: 1px solid #ddd;
+    border: 1px solid gray;
     padding: 8px;
-    }
+    text-align: justify;
+    font-family: monospace;
+}
+p{
+    text-align: justify;
+    font-family: monospace;
+}
+.pelda1{
+    text-indent: 25px; 
+}
