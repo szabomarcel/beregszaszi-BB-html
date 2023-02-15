@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formok.css">
+    <title>formok es urlapok</title>
+</head>
+<body>
+    <h1>Formok és űrlapok</h1>
+    <form name="elso" action="" method="GET">
+        <fieldset>
+            <legend>Ez az első komoly űrlapok</legend>
+            <div class="mezo">
+                <label for="nev">Név:</label>
+                <input id="nev" type="text" name="nev" value="" required=""/>
+            </div>
+            <div class="mezo">
+                <label for="pass">Jelszó:</label>
+                <input id="pass" type="password" name="pass" value="" readonly/>
+            </div>
+            <div>
+                <p><label for="ferfi">Férfi</label>
+                    <input id="ferfi" type="checkbox" name="ferfi" value=""/></p>
+                <p><label for="no">Nő</label>
+                    <input id="no" type="checkbox" name="no" value=""></p>                
+            </div>
+            <div><input type="radio" name="r1g" id="v1" value="ferfi">
+                <label for="v1">Férfi</label>
+                <input type="radio" name="r1g" id="v2" value="no">
+                <label for="v2">Nő</label>
+                <input type="radio" name="r2g" id="v3" value="nem tom">
+                <label for="v3">Nem tudja eldönteni</label>
+            </div>
+            <div>
+                <label for="v3">Email:</label>
+                <input type="email" id="id" name="email">
+            </div>
+            <div>
+                <label for="v3">File</label>
+                <input type="file" id="file" accept="https://www.bikuci.hu/wp-content/uploads/2022/09/307526403_5423813704334725_8474830927396812492_n.jpg" multiple="multiple">
+            </div>
+            <div>
+                <input type="color">
+            </div>
+            <div>
+                <input type="date">
+            </div>
+            
+
+            <input type="submit" value="Adatok küldése"/>
+            <input type="reset" value="Dekete"/>
+        </fieldset>
+    </form>
+</body>
+</html>
