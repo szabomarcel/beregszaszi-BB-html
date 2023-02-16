@@ -27,3 +27,18 @@ legend{
     border-radius: 5px;
     padding: 2px;
 }
+@media screen {
+    html{
+        font-size: 110%;
+    }
+} 
+@media screen {
+    html{
+        font-size: 120%;
+    }
+}
+@media screen {
+    html{
+        font-size: 130%;
+    }
+}
