@@ -27,3 +27,24 @@ legend{
     border-radius: 5px;
     padding: 2px;
 }
+a{
+    text-align: center;
+}
+.navbar {
+    background-color: #133783;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;    
+    color: black;
+  }
+td{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;    
+    color: black;
+}
