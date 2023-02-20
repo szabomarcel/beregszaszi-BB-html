@@ -65,3 +65,9 @@ td{
     width: 9%;
     padding: 10px;
 }
+.password{
+    float: left;
+}
+.login-button{
+    float: left;
+}
