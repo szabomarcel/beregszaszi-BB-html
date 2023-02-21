@@ -1,0 +1,54 @@
+a{
+    color:#666;
+}
+h1{
+    color: #F60;
+}
+h2{
+    color: #933;
+}
+p{
+    text-indent: 25px; 
+    
+}
+span[id$="2"]{
+    font-style: italic; 
+    border: 1px solid red; 
+}
+span[id^="teszt"]{
+    background-color: lightgreen; 
+}
+span[id*="sz"]
+{
+    letter-spacing: 2px;
+}
+ul~p{
+    background-color: yellow;
+    font-weight: bold;
+}
+ul li ul li{
+    color: black;
+}
+ul li{
+    color: blue;
+}
+*:focus{
+    background-color: #666;
+}
+form[method^= post]{
+    border: 1px solid black;
+    text-align: 5%;
+    border-collapse: collapse;
+    width: 100%;
+}
+p [class^=szegely]{
+    height: 150px;
+    border: 1px solid black;
+    background-color: coral;
+    aspect-ratio: 1;
+    animation: mymove 5s infinite;
+}
+li * :only-child{
+    color: red;
+}
+

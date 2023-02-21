@@ -1,0 +1,10 @@
+p:first-letter{
+font-size: x-large;
+color: blue;
+}
+h1 > p:first-line{
+text-transform: uppercase;
+}
+ul>li:nth-child(even){
+    color: red;
+}
