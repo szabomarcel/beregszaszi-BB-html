@@ -23,7 +23,7 @@ h2 { font-size: 150%; }
 h3 { font-size: 125% } 
 
 body {
- font-family: Helvetica, Arial, sans-serif;
+ font-family: Lato, Helvetica, Arial, sans-serif;
 }
 
 #reviews {
@@ -80,7 +80,9 @@ figure div {
    background-image: url(images/gray-gradient.gif);
    background-repeat: repeat-x;
 }
-
+h1,h2,h3{
+   font-family: Lobster, Georgia, Cambria, 'Times New Roman', Times, serif;
+}
 
 
 
