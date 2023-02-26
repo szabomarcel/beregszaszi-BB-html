@@ -1,0 +1,24 @@
+table, td{
+    border: solid 1pt black;
+    border-collapse: collapse;
+    padding: 0.5em;
+}
+table {
+    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+    font-size: 1em;
+}
+tbody{
+    background-color: #f1f1f1;
+}
+td, th{
+    padding: 0.5em;
+}
+thead, tfoot{
+    background-color: #CACACA;
+}
+caption{
+    font-size: 1.2em;
+    font-weight:  bold;
+    background-color: #dca806;
+    padding: 0.5em;
+}

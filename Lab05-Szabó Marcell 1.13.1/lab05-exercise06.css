@@ -1,0 +1,37 @@
+table {
+    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+    font-size: 1.0em;
+    border-collapse:collapse;
+ }  
+ td, th {
+    padding: 0.75em;
+    border-right:1px dotted white;
+ } 
+ tbody{  
+    background-color: #BFAA8F;
+    color: black;
+ }  
+ thead, tfoot {
+    background-color: #362C42;
+    color: #F2E0BD;
+ }
+ tbody span.yes:before{
+    content: url(images/yes16.png);
+ }
+ tbody th {
+    text-align: right;
+    color: #1d1626;
+    background-color: #F2E0BD;
+ }
+ thead th:empty{
+    background-color: white;
+ }
+ tfoot th {
+    background-color: white;
+    text-shadow: none;
+ }
+ tfoot, thead th:nth-last-child(1){ 
+    color: #c74223;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}

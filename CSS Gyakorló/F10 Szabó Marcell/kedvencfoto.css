@@ -1,0 +1,22 @@
+div, h1{
+    background-color:#eee;
+    border: 1px solid black;
+    padding:10px;
+    background-color:white;
+    position:relative;
+    margin:0 auto;
+    margin-top:20px;
+    background-image: url(fa_mintazat.jpg);
+    border:1px solid black;
+    width: 500px;
+    height: 260px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+    display: run-in;
+    text-shadow: 3px 3px 3px #000;
+    transform:rotate(0deg);}
+
+div#fotok a:nth-child(3n+1) img {
+    position:absolute;
+    left:20px;
+    top:40px; 
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);} 
