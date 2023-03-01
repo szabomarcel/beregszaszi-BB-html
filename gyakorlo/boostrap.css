@@ -1,0 +1,58 @@
+.container{
+    text-align: center;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border: blue solid thin;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+    margin: 20px auto;
+    overflow: auto;
+}
+img{
+    max-width: 40%;
+    height: 40%;
+}
+@media screen and  (min-width: 600px) {
+    body{
+        background-color: blanchedalmond;
+        width: 40%;
+        border: blue solid thin;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    p{
+        background-color: orange;
+        font-size: 100%;
+    }
+}
+@media screen and  (min-width: 780px) {
+    body{
+        background-color: blue;        
+        width: 30%;
+        border: blue solid thin;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    p{
+        background-color: yellow;
+        font-size: 110%;
+    }
+}
+@media screen and  (min-width: 992px) {
+    body{
+        background-color: blanchedalmond;
+        width: 20%;
+        border: blue solid thin;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    p{
+        background-color: orange;
+        font-size: 120%;
+    }
+}
