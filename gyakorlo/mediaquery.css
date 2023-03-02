@@ -1,0 +1,34 @@
+body{
+    background-color: aqua;
+}
+p{
+    background-color: aquamarine;
+    font-size: large;
+}
+@media screen and  (min-width: 500px) {
+    body{
+        background-color: blanchedalmond;
+    }
+    p{
+        background-color: yellow;
+        font-size: small;
+    }
+}
+@media screen and  (min-width: 780px) {
+    body{
+        background-color: brown;
+    }
+    p{
+        background-color: black;
+        font-size: large;
+    }
+}
+@media screen and  (min-width: 992px) {
+    body{
+        background-color: burlywood;
+    }
+    p{
+        background-color: olive;
+        font-size: xx-large;
+    }
+}
