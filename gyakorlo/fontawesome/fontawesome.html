@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fontawesone.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <div class="flex-container"><h1>Flexbox Menü Példa</h1></div>
+    <a href="#" class="toggleNav">Menü</a>
+    <div class="flex-container">
+        <div class="flex-container">
+            <a href="#">Menü-1</a>
+            <a href="#">Menü-2</a>
+            <a href="#">Menü-3</a>
+            <a href="#">Menü-4</a>
+            <a href="#">Menü-5</a>
+            <a href="#">Menü-6</a>
+            <div class="main-container">
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-facebook"></i></div>
+                <div><i class="fa-brands fa-github"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>         
+            </div> 
+        </div>
+        <div class="flex-container"><img src="" alt=""></div>
+        <div class="flex-container">Egy egyszerű videotanfolyam, amely segít a FlaxBox elsajátításában. <br> Regisztráljon még ma, hogy megkapja az összes videót és gyakorlatot!</div>
+        <div class="flex-container"> 
+            <div class="mezo" te>
+                <input style="line-height:20px" id="search" autocapitalize="none" autocomplete="off" autocorrect="off" name="search_query" tabindex="0" type="text" spellcheck="false" placeholder="Név" aria-label="Név" role="combobox" aria-haspopup="false" aria-autocomplete="list" class="gsfi ytd-searchbox">
+            </div>
+            <div class="mezo" >
+                <input style="line-height:20px;width:406px" focusable="false" id="search" autocapitalize="none" autocomplete="off" autocorrect="off" name="search_query" tabindex="5" type="text" spellcheck="false" placeholder="E-mail cím" aria-label="E-mail cím" role="combobox" aria-haspopup="false" aria-autocomplete="list" class="gsfi ytd-searchbox">
+            </div>
+            <div class="mezo"><button>Regisztráció!</button></div>
+        </div>
+        <div class="flex-container"><p>&copy; Teszt Elek</p></div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $('.toggleNav').on('click', function () {
+                    $('.flex-nav ul').toggleClass('open');
+                });
+            });
+        </script>
+</body>
+</html>
