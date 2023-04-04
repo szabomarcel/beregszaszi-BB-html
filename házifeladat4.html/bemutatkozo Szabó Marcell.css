@@ -24,27 +24,37 @@ h1, h2 {
 }
 
 header {
-    background: skyblue;
+    background: lightskyblue;
     grid-column: 1 / 13;
 }
 main {
-    background: slategray;
+    background: gainsboro;
     grid-column: 4 / 10;
 }
 nav {
-    background: cadetblue;
+    background: azure;
     grid-column: 1 / 4;
 }
 aside {
-    background: seagreen;
+    background: lightseagreen;
     grid-column: 10 / 13;
 }
 main, nav, aside {
     grid-row: 2 / 4;
 }
 footer {
-    background: darkslateblue;
+    background: lightblue;
     grid-column: 1 / 13;
+}
+a{
+    background-color: beige;
+    border-radius: 20px 0;
+    text-decoration: underline;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 @media all and (max-width:1200px){
     #gallery{
