@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>javascript_megjegyzések_beágyazás </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--külső javasscript  -->
+        <script src="scripts/first.js" type="text/javascript"></script>
+        <!--javasscript a HEAD-ben  -->
+        <script type="text/javascript">
+            <!--
+        /*
+         * Ez egy többsoros megjegyzés
+         */
+            function sayHello() {
+                alert("Head says:ez itt egy figyelmeztetés!");
+            }
+            //-->
+        </script>
+
+    </head>
+    <body>
+        <!--javascript a BODY-ban -->
+        <script type="text/javascript">
+            //ez egy egysoros js megjegyzés
+            document.write("Body says: Hello!");
+        </script>
+        <br>
+        <input type="button" value="Say Hello!" name="btnHello" onclick="sayHello()"/>
+        <input type="button" value="Say Hello 2!" name="btnHello" onclick="sayHelloExt()" />
+    </body>
+</html>
