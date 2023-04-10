@@ -2,7 +2,7 @@ function $(id) {
 	return document.getElementById(id);
 }
 
-//FeldolgozĂł fĂźggvĂŠnyek
+//Feldolgozás fúggvények
 function kamatSzamitas(alap, kamat) {
 	return alap * (1 + kamat / 100);
 }
@@ -15,7 +15,7 @@ function kamatosKamatok(alap, kamat, ev) {
 	return osszegek;
 };
 
-//KiĂ­rĂĄs
+//Kií­rás
 function osszegekbolSorok(osszegek) {
 	var s = '';
 	for (var i = 0; i < osszegek.length; i++) {
@@ -28,21 +28,21 @@ function osszegekbolSorok(osszegek) {
 	return s;
 }
 
-//EsemĂŠnykezelĹk, beolvasĂĄs
+//Eseménykezelők, beolvasás
 function szamol() {
-	//BeolvasĂĄs
+	//Beolvasás
 	var alap 	= $('alap').value;
 	var kamat 	= $('kamat').value;
 	var ev 		= $('ev').value;
 
-	//FeldolgozĂĄs
+	//Feldolgozás
 	var osszegek = kamatosKamatok(alap, kamat, ev);
 	
-	//KiĂ­rĂĄs
+	//Kií­rás
 	$('tablazat').innerHTML = osszegekbolSorok(osszegek);
 }
 function init() {
-	//EsemĂŠnykezelĹk regisztrĂĄlĂĄsa
+	//Eseménykezelők regisztrálása
 	$('gomb').addEventListener('click', szamol, false);
 };
 window.addEventListener('load', init, false);
