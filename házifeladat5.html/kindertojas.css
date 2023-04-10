@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+input{
+    padding: 2px;
+    width: 100px;
+    margin: 10px;
+    text-align: auto;
+    background-color: olive;
+    border-radius: 20px 0;
+    text-decoration: underline;
+    color: black;
+    padding: 14px 25px;
+    text-align: auto;
+    text-decoration: none;
+    display: inline-block;
+}
+div{
+    padding: 10px;
+    color: blue;
+    border: black 2px solid;
+    border-radius: 10px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: olivedrab;
+    border-radius: 20px 0;
+    text-decoration: underline;
+    color: black;
+    padding: 14px 25px;
+    text-align: auto;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.mezo{
+   border: none;
+   background-color:    olive;
+}
+
+#fej{
+    font-style: italic;
+}
+
+#bevitel{
+    font-size:  20px;
+    font-style: italic;
+    font-weight:  bold;
+}
