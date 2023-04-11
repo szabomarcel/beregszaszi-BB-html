@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="PONG.css">
-    <title>PONG</title>
-</head>
-<body>
-    <div class="fullpalya"></div>
-    <div class="palya"></div>
-    <div class="uto" id="uto1"></div>
-    <div class="uto" id="uto2"></div>
-    <div class="labda" id="labda"></div>
-</body>
-<script>
     var uto1 = document.getElementById("uto1");
     var uto2 = document.getElementById("uto2");
     var labda = document.getElementById("labda");
@@ -45,7 +28,6 @@
       if(event.keyCode==40) {uto2LeGomb = false};
       if(event.keyCode==38) {uto2FelGomb = false};
     })
-  
   
     function loop() {
       if(uto1LeGomb) { uto1Y+= 5; };
@@ -92,9 +74,5 @@
       labdaYSeb = (Math.random()*3+2) * (Math.round(Math.random()) * 2 - 1);
     }
   
-  
     startLabda();
-    loop();
-    
-  </script>
-</html>
+    loop();  
