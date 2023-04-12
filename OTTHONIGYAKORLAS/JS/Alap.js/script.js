@@ -49,3 +49,5 @@ function createLink(url, text){
 }
 document.write(createLink("http://google.com", "Google"));
 document.write(createLink("http://hvg", "HVG"));
+
+//for ciklus + while + switch
