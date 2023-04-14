@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="stylesheet" href="gy.css">
-    <script src="index.js"></script>
+    <!--<script src="index.js"></script>-->
     <title>Hajdúszoboszló Baptista gyülekezet</title>
 </head>
 <body>
@@ -21,6 +21,8 @@
                 <li><a href="#">Főoldal</a></li>
                 <li><a href="sport.html" >Sportok amik nálunk van</a></li>
                 <li><a href="ifi.html">Ifis</a></li>   
+                <li class="logo"><a href="#" ><i class="fab fa-facebook"></i></a></li>
+                <li class="logo"><a href="#" ><i class="fab fa-youtube"></i></a></li>
             </ul>
         </nav>
         <main>
@@ -29,42 +31,57 @@
             </section>
 
             <section class="reszletek">
-                <p>Szeretem a html-t.</p>
-                <p>A legjobb hangszóró a JBL!</p>
+                <p>Amivel várjuk kedves vendégeinket</p>
             </section>
             <div class="container">
                 <div class="card">
-                    <h4>Kamijon</h4>
-                    <img src="" alt="Kamijon" width="180" height="100"/>
+                    <h4>Zene</h4>
+                    <img src="https://napfenyestanfolyamok.hu/wp-content/uploads/2011/09/music.jpg" alt="Zene" width="180" height="100"/>
                     <div>
-                        Ez egy olyan jármű ami A-ból B-be eltud jutatni adot rakományokat a cégekhez. Ez lehet Penny Market, Tesco, Aldi, Lidl stb.
+                        <p>Szeretetben és jó hangulatban lévő énekek</p>
+                    </div>
+                    <audio controls mediagroup="vers">
+                        <source src="hangok/danosongs-canvas-9.wav" type="audio/wav">
+                        <source src="hangok/danosongs-canvas-9.ogg" type="audio/ogg">
+                        <source src="hangok/danosongs-canvas-9.mp3" type="audio/mpeg">
+                       <!-- Régebbi böngészőben történő lejátszást támogató fallback ide kerülne -->
+                        <p>A böngészője nem támogatja a hangállomány HTML5 szerinti beágyazott lejátszását.</p>
+                        <p><a href="hangok/danosongs-canvas-9.mp3">A danosongs-canvas-9 állományt letöltheti mp3 formátumban.</a></p>
+                       </audio> 
+                       <audio controls mediagroup="vers">
+                        <source src="hangok/komaromi_janos_dallamok.wav" type="audio/wav">
+                        <source src="hangok/komaromi_janos_dallamok.ogg" type="audio/ogg">
+                        <source src="hangok/komaromi_janos_dallamok.mp3" type="audio/mpeg">
+                       <!-- Régebbi böngészőben történő lejátszást támogató fallback ide kerülne -->
+                        <p>A böngészője nem támogatja a hangállomány HTML5 szerinti beágyazott lejátszását.</p>
+                        <p><a href="hangok/komaromi_janos_dallamok.mp3">A komaromi_janos_dallamok állományt letöltheti mp3 formátumban.</a></p>
+                       </audio>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h4>Istentisztelet</h4>
+                    <img src="data:image/jpeg;base64,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" alt="Istentisztelet" width="180" height="100"/>
+                    <div>
+                        <p>Beoszto személy jó hangulattal próbálja prédikálni a Isten igéjét</p>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="card">
-                    <h4>Kamijon</h4>
-                    <img src="" alt="Kamijon" width="180" height="100"/>
+                    <h4>Bizonyságok</h4>
+                    <img src="" alt="Bizonyságok" width="180" height="100"/>
                     <div>
-                        Ez egy olyan jármű ami A-ból B-be eltud jutatni adot rakományokat a cégekhez. Ez lehet Penny Market, Tesco, Aldi, Lidl stb.
+                        
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="card">
-                    <h4>Kamijon</h4>
+                    <h4>Úrvacsora</h4>
                     <img src="" alt="Kamijon" width="180" height="100"/>
                     <div>
-                        Ez egy olyan jármű ami A-ból B-be eltud jutatni adot rakományokat a cégekhez. Ez lehet Penny Market, Tesco, Aldi, Lidl stb.
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="card">
-                    <h4>Kamijon</h4>
-                    <img src="" alt="Kamijon" width="180" height="100"/>
-                    <div>
-                        Ez egy olyan jármű ami A-ból B-be eltud jutatni adot rakományokat a cégekhez. Ez lehet Penny Market, Tesco, Aldi, Lidl stb.
+                        
                     </div>
                 </div>
             </div>

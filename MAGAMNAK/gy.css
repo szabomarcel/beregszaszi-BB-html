@@ -20,7 +20,7 @@ h1, h2 {
     padding: 20px;
 }
 .container {
-    color: white;
+    color: brown;
     font-family: helvetica, arial, sans-serif;
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -77,6 +77,22 @@ a{
   padding: 20px 0;
   font-size: 30px;
 }
+.normal-behavior {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .off-behavior {
+    display: grid;
+    /* autoprefixer: off */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .normal-behavior-again {
+    display: grid;
+  }
 @media all and (max-width:992px){
     nav ul{
         flex-wrap: wrap;
@@ -89,7 +105,25 @@ a{
     nav li .logo{
         flex: 1 1 25%;
     }
+    .grid-two{
+        grid-template-areas:"alpha delta";
+    }
+}
+@media all and (max-width:992px){
+    nav ul{
+        flex-wrap: wrap;
+    }
 
+    nav li{
+        flex: 1 1 50%;
+    }
+
+    nav li .logo{
+        flex: 1 1 25%;
+    }
+    .grid-two{
+        grid-template-areas:"alpha barvo charlie";
+    }
 }
 
 @media all and (max-width:600px){
@@ -117,6 +151,9 @@ a{
     nav ul.open {
         display: flex;
     }
+    .grid-two{
+        grid-template-areas:"alpha bravo" "alpha charlie";
+    }
 }
 
 section, header, footer{
@@ -132,7 +169,6 @@ section{
     font-size: 1em;
 }
 
-
 a{
     color: white;
     text-decoration: none;
@@ -140,7 +176,6 @@ a{
     padding: 20px 5px;
     width: 100%;
     text-align: center;
-
 }
 
 a:hover{
