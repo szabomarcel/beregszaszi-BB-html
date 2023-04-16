@@ -56,3 +56,34 @@ console.log(paratlanokSzama3)
 
 console.log(parosakSzama);
 
+// 2023.04.15: Új rész for ciklus
+for(var i = 1; i <= 10; i++){
+    console.log(1);
+}
+var tomb = ['Gnd', 38, 'vezér', true, 1990 ]
+for(var i = 0; i < tomb.length; i++){
+    console.log(tmob[i])
+} 
+
+// while ciklus
+var i = 0;
+while(i < tomb.length){
+    console.log(tomb[1]);
+    i++;
+}
+
+// break    
+for(var i = 0; i < tomb.length; i++){
+if(typeof(tomb[i]) === 'boolean'){
+    break;
+    }
+    console.log(tomb[1]);
+}
+
+// continue
+for(var i = 0; i < tomb.length; i++){
+    if(typeof(tomb[i]) === 'boolean'){
+    continue;đ
+    }
+    console.log(tomb[1]);
+}

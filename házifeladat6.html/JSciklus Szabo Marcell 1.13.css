@@ -1,0 +1,25 @@
+body{
+    background-color: #972933;
+    padding: auto;
+    width: 50%;
+    right: 50%;
+}
+.form{
+    padding: 10px 5px;
+    background-color: #B1AB9D;
+    width: 90%;
+    max-width: 550px;
+}
+input, label {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin: 5px 1 5px 1;
+}
+legend{
+    color: #fff;
+    background-color: #97293F;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}

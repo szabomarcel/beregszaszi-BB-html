@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JSciklus Szabo Marcell 1.13.css">
+    <title>JSciklus</title>
+</head>
+<body>
+    <p><h4>1.lépés: Ciklus típus kiválasztása</h4></p>
+    <div id="JSciklus">
+        <input type="radio" name="r1g" id="v1" value="While ciklus">
+        <label for="v1">While ciklus</label>
+        <input type="radio" name="r1g" id="v2" value="Do...While ciklus">
+        <label for="v2">Do...While ciklus</label>
+        <input type="radio" name="r1g" id="v3" value="For ciklus">
+        <label for="v3">For ciklus</label>
+    </div>
+    <p><h4>2.lépés: A ciklus paramétereinek megadása</h4></p>
+    <p>Kezdő érték: i = <input id="nev" type="text" name="nev" value="" required=""/></p>
+    <p><div>
+      <form>
+        Ciklusfeltétel: i
+        <select name="d" onchange="valasz()">
+          <option value="ertek"> <= </option>
+          <option value="ertek"> >= </option>
+          <option value="ertek"> == </option>
+          <option value="ertek"> != </option>
+          <input id="d" type="text" name="d" value="" required=""/>
+        </select><br><br>
+      </form>
+    </div></p>
+    <p>
+        Lépésköz: i = i
+        <select name="d" onchange="valasz()">
+          <option value="ertek"> + </option>
+          <option value="ertek"> - </option>
+          <input id="d" type="text" name="d" value="" required=""/>
+        </select><br><br>
+        <!--<input type="button" onclick="szambe(this.form)" value="gomb">-->
+      </form>
+    </p>
+    <p><h4>3.lépés: A javascript kód generálása</h4></p>
+    <form action="mailto: valaki@valahol" method="post" name="kerdoiv" enctype="text/plain">
+        <textarea name="velemeny" id="velemeny" cols="50" rows="10" placeholder="" required></textarea>        
+    </form>
+    <p><h4>4.lépés: A javascript futatása:</h4></p>
+    <!--<input type="button" value="Számol!" id="gomb"  onclick="eldondendo()"/>-->
+    <h3>A kód futtatáásnak eredménye:</h3>
+    <script src="JSciklus Szabo Marcell 1.13.js"></script>
+</body>
+</html>
