@@ -2,6 +2,23 @@ function valasz(){
   alert(document.c.d.options[document.c.d.selectedIndex].text)
 }
 
+function szoveg(){
+  var szoveg = document.getElementById('szoveg')
+  szoveg.innerHTML = '<div id="szoveg"><p class = "szoveg1> i = 0; while (i <= 10){document.getElementById("szoveg").innerHTML += i + "<br>"; i = i + 1}<!p>">';
+  szoveg.innerHTML = '<div id="szoveg"><p class = "szoveg2> i = 0; while (i >= 10){document.getElementById("szoveg").innerHTML -= i - "<br>"; i = i - 1}<!p>">';
+  szoveg.innerHTML = '<div id="szoveg"><p class = "szoveg2> i = 0; while (i == 10){document.getElementById("szoveg").innerHTML += i + "<br>"; i = i + 1}<!p>">';
+  szoveg.innerHTML = '<div id="szoveg"><p class = "szoveg2> i = 0; while (i != 10){document.getElementById("szoveg").innerHTML -= i - "<br>"; i = i - 1}<!p>">';
+}
+
+function szamolas(){
+  let = 0;
+  for( i = 0; i < 10; i++){
+    document.getElementById("eredmeny").innerHTML += i + "<br>";
+    i++;
+  }
+}
+
+/*
 function szambe(){
   var x = Math.random() * 100 + 1;
   do{
@@ -14,11 +31,12 @@ function szambe(){
   }while(tipp != x)
   document.write(x);
 }
+*/
 
 function eredmeny(){
   var kiir = "";
   var i = 0;
-  while (i <10){
+  while (i < 10){
       kiir += "A ciklusváltozó értéke: " + i + "<br>"; i++;
   }
   document.getElementById("szoveg").innerHTML = kiir;
@@ -53,9 +71,11 @@ function eldondendo(){
         output -= "";
         console.log(output);
         break;
-    }
-    let szoveg = prompt("Hibás megoldás pontosíts!!!")
-    if(szoveg != output){
-      document.getElementById(szoveg).innerHTML += eldondendo;
-    }
+    }  
+}
+function kiiratas() {
+  let szoveg = prompt("Hibás megoldás pontosíts!!!")
+  if(szoveg != output){
+    document.getElementById(szoveg).innerHTML += eldondendo;
+  }
 }

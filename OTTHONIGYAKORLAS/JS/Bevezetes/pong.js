@@ -29,6 +29,7 @@ function rajzolas(){
     c.fillText(x, y, 10, 10);
     c.fillRect(10, utoATerejetol, 10, 100);
 }
+
 function billentyu(gomb){
     console.log(gomb.keyCode);
     if (gomb.keyCode == 40 && utoATerejetol < 200){
@@ -36,6 +37,12 @@ function billentyu(gomb){
     }
     if (gomb.keyCode == 38 && utoATerejetol > 0){
         utoATerejetol = utoATerejetol + 10;
+    }
+    if (gomb.keyCode == 40 && utoATerejetol > 0){
+        utoATerejetol = utoATerejetol - 10;
+    }
+    if (gomb.keyCode == 38 && utoATerejetol < 200){
+        utoATerejetol = utoATerejetol - 10;
     }
 }
 

@@ -23,12 +23,12 @@
       <form>
         Ciklusfeltétel: i
         <select name="d" onchange="valasz()">
-          <option value="ertek"> <= </option>
-          <option value="ertek"> >= </option>
-          <option value="ertek"> == </option>
-          <option value="ertek"> != </option>
+          <option value="szoveg"> <= </option>
+          <option value="szoveg"> >= </option>
+          <option value="szoveg"> == </option>
+          <option value="szoveg"> != </option>
           <input id="d" type="text" name="d" value="" required=""/>
-        </select><br><br>
+        </select>
       </form>
     </div></p>
     <p>
@@ -37,8 +37,8 @@
           <option value="ertek"> + </option>
           <option value="ertek"> - </option>
           <input id="d" type="text" name="d" value="" required=""/>
-        </select><br><br>
-        <!--<input type="button" onclick="szambe(this.form)" value="gomb">-->
+        </select>
+        <!--<input type="button" onclick="szoveg()" value="gomb">-->
       </form>
     </p>
     <p><h4>3.lépés: A javascript kód generálása</h4></p>
@@ -46,8 +46,9 @@
         <textarea name="velemeny" id="velemeny" cols="50" rows="10" placeholder="" required></textarea>        
     </form>
     <p><h4>4.lépés: A javascript futatása:</h4></p>
-    <!--<input type="button" value="Számol!" id="gomb"  onclick="eldondendo()"/>-->
+    <input type="button" value="Számol!" id="gomb"  onclick="eldondendo()"/>
     <h3>A kód futtatáásnak eredménye:</h3>
+    <!--<input type="button" onclick="kiiratas()" value="kiiratas">-->
     <script src="JSciklus Szabo Marcell 1.13.js"></script>
 </body>
 </html>

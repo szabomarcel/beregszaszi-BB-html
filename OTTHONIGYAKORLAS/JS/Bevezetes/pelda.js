@@ -5,6 +5,7 @@
 //console.log("alma" + "fa")
 
 // Adatok tároklás változók
+/*
 let nevem = "Tojás"; //érték adás
 console.log(nevem);
 
@@ -64,3 +65,4 @@ function bemutatkozas2(){
 function elterltEgyEv(){
     eletkor = eletkor + 1;
 }
+*/
