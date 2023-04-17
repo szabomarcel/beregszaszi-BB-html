@@ -33,14 +33,34 @@ function szambe(){
 }
 */
 
+/*
 function eredmeny(){
-  var kiir = "";
-  var i = 0;
-  while (i < 10){
-      kiir += "A ciklusváltozó értéke: " + i + "<br>"; i++;
-  }
-  document.getElementById("szoveg").innerHTML = kiir;
+  var While ciklus = parseInt(document.getElementById('While ciklus').value);
+  var Do...While ciklus = parseInt(document.getElementById('kamatmin').value);
+  var For ciklus = parseInt(document.getElementById('For ciklus').value);
+  
+  console.log(While ciklus, Do...While ciklus, kamatmax);
+
+  eredmeny = "<table><tr><th></th>";
+    for(var k = Do...While ciklus; k < For ciklus + 1; k++){
+        eredmeny += '<th>' + k + '</th>'
+    }
+    eredmeny = "<tr>"
+    for(i = 0; i < evek + 1; i++){
+        eredmeny += '<tr><td>'+ i +'.</td>';
+        for(var j = Do...While ciklus; j < kamatmax; j++){
+            var q = 1 + j / 100;
+            token = While ciklus * Math.pow(q, i);
+            eredmeny += token.toFixed(2) + '<br>';            
+            //console.log(token);
+        }
+        eredmeny += '</tr>';
+    }
+
+    eredmeny += '</table>';
+    document.getElementById('eredmeny').innerHTML += eredmeny;
 }
+*/
 
 function eldondendo(){   
     const foo = 1;
