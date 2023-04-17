@@ -38,20 +38,21 @@
           <option value="ertek"> - </option>
           <input id="d" type="text" name="d" value="" required=""/>
         </select>
-        <!--<input type="button" onclick="szoveg()" value="gomb">-->
+        <button id="set" onclick="szoveg()">Add new Text</button>
       </form>
     </p>
     <p><h4>3.lépés: A javascript kód generálása</h4></p>
-    <form action="mailto: valaki@valahol" method="post" name="kerdoiv" enctype="text/plain">
-        <textarea name="velemeny" id="velemeny" cols="50" rows="10" placeholder="" required></textarea>        
-    </form>
+    <div>
+      <form action="mailto: valaki@valahol" method="post" name="kerdoiv" enctype="text/plain">
+        <textarea name="textareabox" id="textareabox" cols="50" rows="10" disabled></textarea>      
+      </form>    
+    </div>
     <p><h4>4.lépés: A javascript futatása:</h4></p>
-    <input type="button" value="Számol!" id="gomb"  onclick="eldondendo()"/>
-    <h3>A kód futtatáásnak eredménye:</h3>
-    <!--<input type="button" onclick="kiiratas()" value="kiiratas">-->
-    <p class="gomb_igazitasa">
+    <input type="button" value="Számol!" id="gomb"  onclick="szamolas()"/>
+    <h3>A kód futtatásának eredménye:</h3>    
+    <!--<p class="gomb_igazitasa">
       <button id="szoveg" onclick="szoveg()">Katt ide!</button>
-    </p>
+    </p>-->
     <script src="JSciklus Szabo Marcell 1.13.js"></script>
 </body>
 </html>

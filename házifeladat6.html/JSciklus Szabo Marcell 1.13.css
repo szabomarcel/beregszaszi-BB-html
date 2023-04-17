@@ -3,6 +3,7 @@ body{
     padding: auto;
     width: 50%;
     right: 50%;
+    margin: left;
 }
 .form{
     padding: 10px 5px;

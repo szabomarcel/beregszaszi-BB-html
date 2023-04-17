@@ -1,6 +1,9 @@
 function valasz(){
   alert(document.c.d.options[document.c.d.selectedIndex].text)
 }
+function setText() {
+  var text = document.getElementById("txtArea").value = "Linuxhint is the best Website for Learning Skills";
+ }
 
 function szoveg(){
   var szoveg = document.getElementById('szoveg')
