@@ -59,5 +59,5 @@ for (var i = 0; i < cellak.length; i++) {
     });
 }
 
-
+// táblázat generalasa
 
