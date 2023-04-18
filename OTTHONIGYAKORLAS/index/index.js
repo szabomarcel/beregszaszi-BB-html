@@ -210,3 +210,82 @@ console.log(
         }
     ][2].provider.country
 )
+
+/*
+* opreátorok
+*/
+
+// (number, number) -> number
+console.log(2 + 3);
+
+/*
+    operátorok csoportosítása
+        - operandusok száma szerint:
+            1: unary
+            2: binary
+            3: ternary
+        - operátor lexikális elhelyezkedése
+            előtte: prefix
+            közötte: infix
+            utána: postfix
+        - hajt -e végre mellékhatást? (side effect)
+            igen
+            nem         
+*/
+
+/*
+* Aritmetika
+* (number, number) -y number
+*/
+
+// +, -, *, /, %
+console.log(2 + 4);
+console.log(2 - 4);
+console.log(2 * 4);
+console.log(2 / 4);
+console.log(7 % 3);
+
+/*
+* Összehasonlító
+* (any, any) -> boolean
+*/
+
+// ==
+console.log(2 == "2");
+
+// !=
+console.log(2 != 1);
+
+// === (identity)
+console.log(2 === true);
+console.log(2 !== true);
+console.log('János' == 'József');
+
+// >, <, >=, <=
+console.log(3 > 5);
+
+/*
+* (boolean, boolean) -> boolean
+* (boolean) -> boolean
+*/
+
+// logikai ÉS
+console.log(true && true);
+
+// logikai VAGY
+console.log(true || false);
+
+//negálás
+console.log(!true);
+
+console.log(2 === 2 && 1 > 5);
+console.log(2 === 2 && (1 > 5 || true));
+
+console.log((2 + 3) * 5);
+
+/*
+* Conditional
+* (bool, any, any) -> any
+*/
+ 
+console.log(true ? 'elso' : 'második');
