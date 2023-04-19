@@ -66,3 +66,9 @@ function elterltEgyEv(){
     eletkor = eletkor + 1;
 }
 */
+/*
+var cels = prompt('Celsius fok:' ,0);
+var fahr = cels * 9 / 5 + 32;
+document.writeln('<p> Celsius = ' + cels + '</p>');
+document.writeln('<p> Fahrenheit = ' + fahr + '</p>');
+*/
