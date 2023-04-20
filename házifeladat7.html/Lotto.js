@@ -52,10 +52,14 @@ for (var i = 0; i < cellak.length; i++) {
         this.style.fontWeight = 'normal';
     });
 
-    cellak[i].addEventListener('click', function () {
-        console.log(this);
-        this.style.borderColor = 'red'; 
-    });
+    // Alert kiíraással majd
+    if (cellak[i] > 5){
+        cellak[i].addEventListener('click', function () {
+            console.log(this);
+            this.style.borderColor = 'red'; 
+        });
+    }
+    
 
     cellak[i].addEventListener('dblclick', function () {
         console.log(this);
