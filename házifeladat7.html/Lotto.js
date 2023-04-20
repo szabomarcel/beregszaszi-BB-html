@@ -1,4 +1,4 @@
-document.getElementById('tablazat').innerHTML = tablazatKeszit(6, 7);
+document.getElementById('tablazat').innerHTML = tablazatKeszit(9, 9);
 
 function tablazatKeszit(sor, oszlop) {
     var tablazat = "<table>";
@@ -61,38 +61,20 @@ for (var i = 0; i < cellak.length; i++) {
         console.log(this);
         this.style.borderColor = 'gray';      
     });
-    this.cellak == cellak;
-    if (tablazat > 5){
-      document.write("Már kiválatotta az 5 számot! Ha akar választani akkor az egyiket törölje ki! És válassza újra ki az adott számot!")
-    }
 }
 
-// táblázat generalasa
-
-function kiiratas(cellak){
-    /*
-    let x;
-    let y;
-    let z;
-    document.getElementById("rollButton").onclick = function(){
-        x = Math.floor(Math.random() * 6) + 1;
-        y = Math.floor(Math.random() * 6) + 1;
-        z = Math.floor(Math.random() * 6) + 1;
-        document.getElementById("xlabel").innerHTML = x;
-        document.getElementById("xlabel").innerHTML = y;
-        document.getElementById("xlabel").innerHTML = z;
-    }
-*/
-}
-if(isFinite(cellak)){
-    if (Math.floor(a)==a){
-        if(a % 2 == 0){
-            document.write('A szám páros!')
+    if(isFinite(cellak)){
+        if (Math.floor(cellak)!=a){
+            if(cellak > 5){
+                document.write (cellak = prompt("Már kiválatotta az 5 számot! Ha akar választani akkor az egyiket törölje ki! És válassza újra ki az adott számot!"))
+            }
         }
     }else{
-        document.write('A szám páratlan!')
+        document.write("Az ön által kiválasztott számok: ")
     }
-}else{
-    document.write("Az ön által kiválasztott számok: ")
-}
-document.write(szovegsor);
+    document.write(szovegsor);
+    
+// táblázat generalasa
+
+
+

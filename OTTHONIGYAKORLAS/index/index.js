@@ -289,3 +289,33 @@ console.log((2 + 3) * 5);
 */
  
 console.log(true ? 'elso' : 'második');
+
+// Operatorok 2
+/*
+* Assigment
+* (var, any) -> any 
+*/
+
+var valtozo;
+console.log(valtozo);
+
+console.log(valtozo = 'szia');
+console.log(valtozo);
+
+valtizo = 3;
+console.log(valtozo);
+
+// increment, decrement
+valtozo++;
+valtozo--;
+valtozo--;
+console.log(valtozo);
+
+// +=, -=
+var szam = 5;
+// szam = szam + 10;
+szam += 10;
+szam -= 10;
+szam *= 10;
+szam /= 10;
+console.log(szam);
