@@ -53,13 +53,16 @@ for (var i = 0; i < cellak.length; i++) {
     });
 
     // Alert kiíraással majd
-    if (cellak[i] > 5){
-        cellak[i].addEventListener('click', function () {
-            console.log(this);
-            this.style.borderColor = 'red'; 
-        });
-    }
     
+    cellak[i].addEventListener('click', function () {
+        if(i > 5){
+            this.style.borderColor = 'red'; 
+            var cella = cellak
+            alert(cella);        
+        }else if (cella != 5){
+            alert("Már kiválatotta az 5 számot! Ha akar választani akkor az egyiket törölje ki! És válassza újra ki az adott számot!")
+        }
+    });
 
     cellak[i].addEventListener('dblclick', function () {
         console.log(this);
@@ -67,19 +70,13 @@ for (var i = 0; i < cellak.length; i++) {
     });
 }
 
-    if(isFinite(cellak)){
-        if (Math.floor(cellak)!=a){
-            if(cellak > 5){
-                document.write (cellak = prompt("Már kiválatotta az 5 számot! Ha akar választani akkor az egyiket törölje ki! És válassza újra ki az adott számot!"))
-            }
-        }
-    }else{
-        document.write("Az ön által kiválasztott számok: ")
-    }
+szovegsor = "Az ön által kiválasztott számok: "
+    
     document.write(szovegsor);
     
 // táblázat generalasa
 
+/*
 function* generator(i) {
     yield i;
     yield i + 10;
@@ -92,4 +89,4 @@ function* generator(i) {
   
   console.log(gen.next().value);
   // Expected output: 20
-
+*/

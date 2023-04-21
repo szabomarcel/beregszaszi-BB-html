@@ -319,3 +319,56 @@ szam -= 10;
 szam *= 10;
 szam /= 10;
 console.log(szam);
+
+// Elágazások if / else statement
+var age = prompt('Add emg az életkorod')
+if(age < 20){
+    alert('Fiatalabb, mint 20')
+}else if(age > 20 && age < 30 ){
+    alert('Fiatalabb, mint 20 és fiatalabb mint 30')
+}else{
+    alert('Idősebb, mint 20')
+}
+
+// switch
+
+switch(age){
+    case 18:
+        console.log('Felhasználó 18 éves');
+    case 18:
+        console.log('Felhasználó 19 éves');
+    default:
+        console.log('FElhazsnáló életkora ismeretlen');
+}
+
+switch(true){
+    case age < 20:
+        alert('Fiatalabb, mint 20');
+        break;
+    case age > 20 && age < 30:
+        alert('Fiatalabb, mint 20 és fiatalabb mint 30');
+        break;
+    default: 
+    alert('Idősebb, mint 30');
+}
+
+// Feladat
+var quantity = prompt("Add meg a databszámot");
+var type =prompt("Add meg a típust")
+
+var type = {
+    student: 300,
+    adult: 350,
+    retired: 280
+};
+
+var price = types[type];
+
+console.log(price)
+if (price === undefined){
+    alert('Érvénytelen típus')
+}else{
+    var discount = quantity >10 ? 0.9 : 1;
+    var total = quantity * price * discount;
+    alert(total);    
+}
