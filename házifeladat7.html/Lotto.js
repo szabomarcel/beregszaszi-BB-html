@@ -55,9 +55,10 @@ for (var i = 0; i < cellak.length; i++) {
     // Alert kiíraással majd
     
     cellak[i].addEventListener('click', function () {
-        if(i > 5){
+        if(i != 5){
             this.style.borderColor = 'red'; 
             var cella = cellak
+            console.log(this)
             alert(cella);        
         }else if (cella != 5){
             alert("Már kiválatotta az 5 számot! Ha akar választani akkor az egyiket törölje ki! És válassza újra ki az adott számot!")
@@ -75,6 +76,30 @@ szovegsor = "Az ön által kiválasztott számok: "
     document.write(szovegsor);
     
 // táblázat generalasa
+
+/*
+let x, y, z;
+document.getElementById("rollButton").onclick = function(){
+    x = Math.floor(Math.random() * 6) + 1;
+    y = Math.floor(Math.random() * 6) + 1;
+    z = Math.floor(Math.random() * 6) + 1;
+
+    document.getElementById("xlabel").innerHTML = x;
+    document.getElementById("ylabel").innerHTML = y;
+    document.getElementById("zlabel").innerHTML = z;
+}
+
+function* generatorFunc() {
+    yield 100;
+}
+
+// returns generator object
+const generator = generatorFunc();
+
+console.log(generator.next());
+console.log(generator.throw(new Error('Hiba történt!')));
+console.log(generator.next());
+*/
 
 /*
 function* generator(i) {
