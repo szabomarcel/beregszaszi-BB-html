@@ -77,6 +77,38 @@ szovegsor = "Az ön által kiválasztott számok: "
     
 // táblázat generalasa
 
+document.getElementById("generalas").innerHTML = getRndInteger(tablazat);
+/*
+var k,n;
+k=1;
+n=20;
+while(i<=n) {
+    writeln(i+". szám: "+k);
+    k=k*2;
+    i=i+1;
+    }
+   
+   writeln();
+   writeln("__________")
+*/
+function tables(tablazat){
+
+document.write("<table>");
+    var counter = 0;
+    for(i = 1; i < 50; i++) {
+            counter++;
+        if(counter == 11) {
+            counter = 0;
+            document.write("<tr>");
+        }
+        document.write("<td>" + tablazat + "</td>");
+        if(counter == 10) {
+            counter = 0;
+            document.write("</tr>");   
+        }
+    }
+document.write("</table>");
+}
 /*
 let x, y, z;
 document.getElementById("rollButton").onclick = function(){
