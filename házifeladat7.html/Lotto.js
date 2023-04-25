@@ -55,21 +55,13 @@ for (var i = 0; i < cellak.length; i++) {
     // Alert kiíraással majd
     
     cellak[i].addEventListener('click', function () {
-        if (tablazat != 5){
-            alert("Már kiválatotta az 5 számot! Ha akar választani akkor az egyiket törölje ki! És válassza újra ki az adott számot!")
-        }
-        document.getElementById("objektum").innerHTML += tablazat(6) + "<br>" + "<hr>";
-        /*
-        if(i != 5){
+        if (tablazat > 5 || tablazat != 5){
             this.style.borderColor = 'red'; 
             var cella = cellak
-            alert(cella);        
-        }else if (cella != 5){
-            alert("Már kiválatotta az 5 számot! Ha akar választani akkor az egyiket törölje ki! És válassza újra ki az adott számot!")
+            console.log(cella + tablazat);
         }
-        */
-        console.log(tablazat);
-        return tablazatKeszit
+        alert("Már kiválatotta az 5 számot! Ha akar választani akkor az egyiket törölje ki! És válassza újra ki az adott számot!")
+        document.getElementById("tablazat").innerHTML += tablazat(6) + "<br>" + "<hr>";    
     });
 
     cellak[i].addEventListener('dblclick', function () {
@@ -87,25 +79,14 @@ szovegsor = "Az ön által kiválasztott számok: "
     document.write(szovegsor);
 
 document.getElementById("generalas").innerHTML = getRndInteger(tablazat);
+(generale) => {
+    let a = 1;
+    console.log(`Szam ${tablazat}`);
+    return a + generale 
+   
+}
 
-function tablazat(size, tablazat, highest) {
-	var numbers = [];
-	for(var i = 0; i < size; i++) {
-		var add = true;
-		var randomNumber = Math.floor(Math.random() * highest) + 1;
-		for(var y = 0; y < highest; y++) {
-			if(numbers[y] == randomNumber) {
-				add = false;
-			}
-		}
-		if(add) {
-			numbers.push(randomNumber);
-		} else {
-			i--;
-		}
-	}
-  
-	var highestNumber = 0;
+/*  var highestNumber = 0;
 	for(var m = 0; m < numbers.length; m++) {
 		for(var n = m + 1; n < numbers.length; n++) {
 			if(numbers[n] < numbers[m]) {
@@ -117,7 +98,7 @@ function tablazat(size, tablazat, highest) {
 	}
   
 	document.getElementById("numbers").innerHTML = numbers.join(" - ");
-}
+}*/
 
 /*
 var k,n;
@@ -183,9 +164,7 @@ function* generator(i) {
     yield i;
     yield i + 10;
   }
-  
   const gen = generator(10);
-  
   console.log(gen.next().value);
   // Expected output: 10
   

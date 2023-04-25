@@ -1,0 +1,19 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+aside{
+    grid-column-start: 2;
+}
+aside{
+    grid-column-start: -2;
+}
+.grid img:first-child{
+    grid-area: span 3 / span 3;
+}
+.grid img:first-child{
+    grid-row-start: span 3;
+    grid-column-start: span 3;
+    grid-row-end: auto;
+    grid-column-start: auto;
+}
