@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="id.css">
+    <title>id</title>
+</head>
+<body>
+    <div class = "container">
+        <h1 class = "text-center display-6"> Feladat: </h1>
+        <p>
+            A gombra kattintáskor növeld, vagy csökkentsd 1-gyel a kiválasztott 
+            formában lévő értéket, attól függően, hogy a radio gombok közül 
+            melyik van bepipálva.
+        </p>
+        <form id = "shapes">
+            <select name = "selectedShape" class = "form-control">
+                <option value = "circle">kör</option>
+                <option value = "square" selected = "selexted">Négyzet</option>
+                <option value = "rectangle">Téglalap</option>
+            </select>
+            <br/>
+            <label class="radio-inline me-5">
+                <span class="fa fa-plus"></span>
+                <input type="radio" name="action" value="incrment" checked="checked"/>
+            </label>
+            <label class="radio-inline">
+                <span class="fa fa-minusz"></span>
+                <input type="radio" name="action" value="incrment" checked="checked"/>
+            </label>
+            <br/>
+            <br/>
+            <button type="submit" class="btn btn-primary d-inline-block">Próbáld ki</button>
+        </form>
+    </div>
+    <script src="id.js"></script>
+</body>
+</html
