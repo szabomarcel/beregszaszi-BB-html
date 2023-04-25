@@ -100,3 +100,17 @@ function kisebb(a, b){
     return a < b;
 }
 BkisebbA = cserel_valtozo(kisebb, 20, 10); 
+document.getElementById("objectum").innerHTML += BkisebbA + "<br>";
+
+// Formális paraméterek
+function proba(a, b){
+    console.log('a =', a);
+    console.log('b =', b);
+    console.log('arguments =', arfuments);
+}
+
+// Aktuális és formális pararméterek száma megegyezik
+proba(1, 2);
+// => a = 1
+// => b = 2
+// => arguments = [1, 2]
