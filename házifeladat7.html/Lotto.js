@@ -55,6 +55,11 @@ for (var i = 0; i < cellak.length; i++) {
     // Alert kiíraással majd
     
     cellak[i].addEventListener('click', function () {
+        if (tablazat != 5){
+            alert("Már kiválatotta az 5 számot! Ha akar választani akkor az egyiket törölje ki! És válassza újra ki az adott számot!")
+        }
+        document.getElementById("objektum").innerHTML += tablazat(6) + "<br>" + "<hr>";
+        /*
         if(i != 5){
             this.style.borderColor = 'red'; 
             var cella = cellak
@@ -62,7 +67,9 @@ for (var i = 0; i < cellak.length; i++) {
         }else if (cella != 5){
             alert("Már kiválatotta az 5 számot! Ha akar választani akkor az egyiket törölje ki! És válassza újra ki az adott számot!")
         }
-        console.log(tablazat)
+        */
+        console.log(tablazat);
+        return tablazatKeszit
     });
 
     cellak[i].addEventListener('dblclick', function () {
