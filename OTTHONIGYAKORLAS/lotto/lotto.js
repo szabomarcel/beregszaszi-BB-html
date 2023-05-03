@@ -25,5 +25,16 @@ buton.addEventListener('click',() =>{
     let rgbColor = `rgba(0,0,0,${opacity(0.4,1)})`;
     let bgColor = `linear-gradien(${randDeg(0,360)}deg, ${rgbColor},${rgbColor})`
     let randomNumber = random_num();
-    userList[index].innerHTML = randomNumber;
+    useList[index].innerHTML = randomNumber;
+    userList[index].style.background = `${bgColor}`
+    actualList[index].style.background = `${bgColor}`
+    index++; 
+
+    if(index == 6){
+        displayActuals()
+        setTimeout(() => {
+            alert('Reloading Page')
+            location.reload()
+        }, 5000); // 5000 milliseconds == 5 seconds
+    }
 })
