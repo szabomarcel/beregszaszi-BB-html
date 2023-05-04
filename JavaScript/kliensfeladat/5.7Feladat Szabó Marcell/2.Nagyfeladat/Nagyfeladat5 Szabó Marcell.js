@@ -19,6 +19,22 @@ function myFunction() {
     document.getElementById("demo").innerHTML = txt;
   }
 // parentNode
+function delegal(szulo, tipus, szelektor, fuggveny){
+  if(e.target.matches(`${szelektor}, ${szelektor} * `)){
+    let celpont = e.target;
+    while (!celpotn.matches(szelektor)){
+      celpont = celpont.parentNode;
+    }
+    e.valodiCelpont = celpont;
+    return fuggveny.call(celpont, e);
+  }
+  szulo.addEventListener(tipus, delegaltFuggveny);
+}
+delegal($("ul.lista"), "click", "li", listaKattintas);
+function listaKattintas(e){
+  const li = this;
+  li.classList.toggle("kesz");
+}
 if(Node.parentElement){
     Node.parentElement.style.color = "red";
 }
