@@ -37,14 +37,13 @@ function paros(){
             if(t[i] == 0){
                 for(negativ = 1; negativ === negativ.length; negativ++){
                         negativ[negativ.length] = {'index': i,'érték': tomb[i]}
+                        Math.abs(t4[i-1]-tomb[i]) < szam, tomb[i+1]
+                        tomb[i] < tomb[i-1]? tomb[1] = tomb[i - 1]                        
                 }
-                Math.abs(t4[i-1]-tomb[i]) < szam, tomb[i+1]
-                tomb[i] < tomb[i-1]? tomb[1] = tomb[i - 1]
             }
         }
 }
 console.log(paros(t1, t3))
-
 
 // 14. Feladat
 function tomb(){
@@ -55,7 +54,6 @@ function tomb(){
         console.log("Részszöveggel kezdődnek!")
     }
 }
-
 
 // 15. Feladat
 function primtenyezos(){
@@ -70,7 +68,6 @@ function primtenyezos(){
     }    
 }
 Console.log(kiir);
-
 
 // 16. Feladat
 function matrix(kiirando){    
