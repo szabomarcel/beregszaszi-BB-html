@@ -6,7 +6,7 @@ const magassag = 400;
 vaszon.width = szelesseg; // szélesség beállítása
 vaszon.heigt = magassag; // magasság beállítása
 
-// hátomszög rajzolása
+// háromszög rajzolása
 rajz.beginPath(); // elkezdjük az alakzatot
 rajz.strokeStyle = "blue"; // a toll színének állítása
 rajz.lineWith = 3; // a toll vastagságának beállítása
