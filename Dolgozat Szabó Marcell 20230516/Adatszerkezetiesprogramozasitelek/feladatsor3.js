@@ -14,7 +14,7 @@ let isValid = function(s){
     return stack.length === 0;
     
 };
-document.getElementById("Zárójel").innerHTML
+console.log(s)
 
 function helyeszarojel(S){
     st,x,S = read;
