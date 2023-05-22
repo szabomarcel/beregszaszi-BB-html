@@ -36,9 +36,9 @@ function paros(){
         for(i = 1; i < t1.length; i++){
             if(t[i] == 0){
                 for(negativ = 1; negativ === negativ.length; negativ++){
-                        negativ[negativ.length] = {'index': i,'érték': tomb[i]}
-                        Math.abs(t4[i-1]-tomb[i]) < szam, tomb[i+1];
-                        tomb[i] < tomb[i-1]? tomb[1] = tomb[i - 1]
+                        negativ[negativ.length] = {'index': i,'érték': tomb[i]},
+                        Math.abs(t4[i-1]-tomb[i]) < szam, tomb[i+1],
+                        tomb[i] < tomb[i-1]? tomb[1] = tomb[i - 1];
                     }                       
             }
         }
