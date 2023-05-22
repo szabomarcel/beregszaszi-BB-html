@@ -1,10 +1,10 @@
 // 11. Feladat
-let t = [1, 5, -2, 6, 9, 10, -100, 13, 14, 18, 20, 100];
-let t2 = [-1,-6, 2, -9, 11, 100, -12, -13, -14]
+let t = [1, 5, -2, 6, 9, 10, -100, 13, 14, 18, 20, 100]; // Tömnöt töltünk fel negatív és pozitiv számokkal
+let t2 = [-1,-6, 2, -9, 11, 100, -12, -13, -14]; // Tömnöt töltünk fel negatív és pozitiv számokkal
 function kor(){
-    let negativ = []
-    for(i = 1; i < t.length; i++){
-        if(t[i] < 0){
+    let negativ = [] // Létre hozunk egy negatívos tömböt
+    for(i = 1; i < t.length; i++){ // Kell egy for ciklus i változóval
+        if(t[i] < 0){ // Ha fügvény amikor a t kisebb mint a 0
             negativ[negativ.length] = {'index': i,'érték': tomb[i]}
         }
     }
