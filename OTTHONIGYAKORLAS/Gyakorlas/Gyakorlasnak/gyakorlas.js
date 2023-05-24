@@ -63,7 +63,7 @@ function lnko(f, k){
 // 8. Feladat
 function lkkt(j,l){
     if(j * l){
-        console.log(j * k / [j, l])
+        console.log(j * l / [j, l])
     }
 }
 
