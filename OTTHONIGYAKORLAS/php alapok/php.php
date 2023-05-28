@@ -1,11 +1,15 @@
 <?php
-function InputField($text, $name, $type = "text", $value = "", $maxlength = 100, $id = null, $class=""){
+function InputField($text, $name, $type = "text", $value = "", $maxlength = 100, $id = null, $class="", $list = null, $autocomplete = false, $required = false, $moreAttributes = ""){
     if(!$id){$id = $name;}
     echo '<div>';
     echo '<label for="'.$name.'">'.$text.'</label>';
     echo '<input type="text"'.$type.'name=""'.$name.'id="'.$name.'" value=""'.$value.'"">';
     if($maxlength){echo 'maxlength="' .$maxlength. '"';}
     if($class){echo 'class="'.$class.'"';}
+    if($list){echo 'list="'.$list.'"';}
+    if($autocomplete){echo 'autocomplete="'.$autocomplete.'"';}
+    if($moreAttributes){echo 'moreAttributes="'.$moreAttributes.'"';}
+    if($required){echo 'required="'.$required.'"';}
     echo '>';
     echo '</div>';
 }
@@ -26,7 +30,7 @@ function CreateForm(){
     if(isset($model['work'])){$work = $model['work'];}
     echo '<form action=""rethod="post">';
 
-    InputField("First name", "firstname", "text", $firstname);
+    InputField("First name", "firstname", "text", $firstname, "Example: Jim", 20, "register-firstname", "input short", null, false, true,"aut");
     InputField("Last name", "lastname", "text", $lastname);
     InputField("E-mail address", "email", "email", "text", $email);
     InputField("Password", "pass", "password", "text", $pass);
