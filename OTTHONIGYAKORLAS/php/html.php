@@ -1,5 +1,5 @@
 <?php
-require_once 'forms/input-field.php';
+require_once 'forms/form-builder.php';
 ?>
 <!DOCTYPE html>
 <html lang="hu">
@@ -12,12 +12,42 @@ require_once 'forms/input-field.php';
 <body>
     <?php
     echo '<h1>Form Class</h1>';
+
+    $data=[
+        'firstname' => "John",
+        'lastname' => "Smith",
+        'email' => "jsmith",
+        'pass' => "12345",
+        'pass2' => "12345",
+        'born' => "1995-03-12",
+        'work' => 8
+    ];
+    $form = new FormBuilder();
+
+    $form->add(new InputField("First name","firstname"))
+    ->add(new InputField("Last name","lastname"))
+    ->add(new InputField("E-mail address","email"))
+    ->add(new InputField("Password","pass","password"))
+    ->add(new InputField("Password again","pass2", "password"))
+    ->add(new InputField("Born date","born","date"))
+    ->add(new InputField("Working hours","work", "number"))
+    ->setBtnText("Regiszter")
+    ->onsubmit(function(){
+        echo '<p>Submitted</p>';
+    });
+    echo $fotm -> asHTML($data);
+    
+    /*
     echo '<form action="" metod="post">';
     $field = new InputField("First name","Firstname");
     $field -> setId("register-firstname");
     echo $field->asHTML();
+    
+    $field = new InputField("E-mail address","enail");
+    $field ->setId("register-email")->setPlaceholder("Example:jim@host.com");
+    echo $field->asHTML();
     echo '<button>Submit</button>';
-    echo '</form>';
+    echo '</form>';*/
     ?>
 </body>
 </html>
