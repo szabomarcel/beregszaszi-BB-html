@@ -2,7 +2,7 @@
 require_once "input-field-php";
 class FormBuilder{
     private $action;
-    private $nethod;
+    private $method;
     private $id;
     private $btnText;
     private $btnName;
@@ -25,11 +25,13 @@ class FormBuilder{
         $this->fields[] = $field;
         return $this;
     }
-    public function onSubmit($nethod){
-        if(strtolower($this->nethod) == "get"){$source = $_GET;}
+    public function onSubmit($method){
+        if(strtolower($this->method) == "get"){$source = $_GET;}
         else{$sourcel == s_POST}
+
         if(isset(s_POST[$this->btnName])){
-            call_user_func($nethod);
+            unset($source[$this->btnName]);
+            call_user_func($method, $source);
         }
         return $this;
     }
