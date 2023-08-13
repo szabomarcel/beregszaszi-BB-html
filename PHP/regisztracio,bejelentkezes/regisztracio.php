@@ -12,11 +12,11 @@
             $true = false;
             array_push($errors, "A jelszó üres!");
         }
-        if(empty($_POST['repassword'])){
+        if(empty($_POST['password_2'])){
             $true = false;
             array_push($errors, "A jelszó megerősitése!");
         }
-        if(!($_POST['password']==$_POST['repassword'])){
+        if(!($_POST['password']==$_POST['password_2'])){
             $true = false;
             array_push($errors, "A jelszavak nem egynelöek.");
         }
@@ -44,19 +44,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <form action="regisztracio.php" method="POST">
-        username<input type="text" name="username">
-        password<input type="password" name="password">
-        repassword<input type="password" name="repassword">
-        <input value="Regisztráció!" type="submit" name="submit">
-    </form>
-    <?php
-        if(!empty($errors)){
-            foreach($errors as $key){
-                echo $key. "<br>";
+    <body>
+        <form action="regisztracio.php" method="POST">
+            username<input type="text" name="username">
+            password<input type="password" name="password">
+            re_password<input type="password" name="password_2">
+            <input value="Regisztráció!" type="submit" name="submit">
+        </form>
+        <?php
+            if(!empty($errors)){
+                foreach($errors as $key){
+                    echo $key . "<br>";
+                }
             }
-        }
-    ?>
-</body>
+        ?>
+    </body>
 </html>
