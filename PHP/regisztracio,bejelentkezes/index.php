@@ -1,4 +1,11 @@
 <?php
+    session_start();
+    if(!empty($_SESSION['username'])){
+        header('location: home.php');
+    }
+    else{
+        session_start();
+    }
     $db = new mysqli("localhost", "root", "", "youtube");
     if(isset($_POST['submit'])){
         $errors = array();
@@ -44,14 +51,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function main(){
+            var username = document.forms['form']['username'];
+            var password = document.forms['form']['password'];
+
+            var errors = document.getElementById('errors');
+
+            if(username.value == "" && password.value == ""){
+                username.style.border = "1px solid red";
+                password.style.border = "1px solid red";
+                errors.innerHTML = "A felhasználóinév és a jelszó üres!";
+                username.focus();
+                return false;
+            }
+            else if(username.value == ""){
+                username.style.border = "1px solid red";
+                errors.innerHTML = "A felhasználóinév üres!";
+                username.focus();
+                return false;
+            }
+            else if(password.value == ""){
+                password.style.border = "1px solid red";
+                errors.innerHTML = "A jelszó üres!";
+                username.focus();
+                return false;
+            }
+        }
+    </script>
 </head>
 <body>
-    <form action="index.php" method="POST">
+    <form onsubmit="return mian()" name="form" action="index.php" method="POST">
         username<input type="text" name="username"><br>
         password<input type="password" name="password">
         <input value="Bejelentkezés!" type="submit" name="submit">
     </form>
-    
+    <div id="errors">
+
+    </div>
     <?php
          if(!empty($errors)){
             foreach($errors as $key){
